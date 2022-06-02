@@ -39,7 +39,7 @@ public class SwaggerConfigurations {
                 .licenseUrl("https://www.apache.org/licenses/LICENSE-2.0")
                 .version("1.0.0")
                 .contact(new Contact("Ramildo Pereira da Silva Junior",
-                		"https://github.com/Juninho013/alura-git", "rpsjuninho@gmail.com"))
+                		"https://github.com/Juninho013/Compass-CRUD", "rpsjuninho@gmail.com"))
                 .build();
 
         return infoApi;
