@@ -1,5 +1,6 @@
 # Compass-CRUD
 Projeto final do programa de bolsas de capacitação para Open Banking da empresa Compass.Uol.
+
 Contrução de uma API, com sistema de CRUD de produtos.
 
 Tecnologias utilizadas:
@@ -8,7 +9,9 @@ Spring boot
 Swagger
 
 Autor do projeto:
+
 Ramildo Pereira da Silva Junior
+
 rpsjuninho@gmail.com
 
 Como executar o Sistema:
