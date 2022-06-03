@@ -4,8 +4,11 @@ Projeto final do programa de bolsas de capacitação para Open Banking da empres
 Contrução de uma API, com sistema de CRUD de produtos.
 
 Tecnologias utilizadas:
+
 Java
+
 Spring boot
+
 Swagger
 
 Autor do projeto:
