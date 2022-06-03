@@ -6,15 +6,15 @@ import io.swagger.annotations.ApiParam;
 
 public class SwaggerPageable {
 
-	@ApiParam(value = "Pagina a ser carregada", example = "0")
+	@ApiParam(value = "Page to load", example = "0")
 	@Nullable
 	private Integer page;
 
-	@ApiParam(value = "Quantidade de produtos", example = "5")
+	@ApiParam(value = "Quantity of products", example = "5")
 	@Nullable
 	private Integer size;
 
-	@ApiParam(value = "Ordenação dos produtos")
+	@ApiParam(value = "Ordering of products")
 	@Nullable
 	private String sort;
 

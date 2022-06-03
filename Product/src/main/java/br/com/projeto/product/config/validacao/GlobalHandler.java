@@ -27,11 +27,12 @@ public class GlobalHandler {
 		List<FieldError> fieldErrors = exception.getBindingResult().getFieldErrors();
 		List<String> messages = new ArrayList<String>();
 		fieldErrors.forEach(e -> {
-			messages.add("o campo " + e.getField() + " " + e.getDefaultMessage());
+			messages.add("The field" + e.getField() + " " + e.getDefaultMessage());
 		});
 		return new ResponseEntity<>(new ExceptionResponses(HttpStatus.BAD_REQUEST.value(), messages),
 				HttpStatus.BAD_REQUEST);
 	}
+	
 
 	@ExceptionHandler(HttpMessageNotReadableException.class)
 	public ResponseEntity<Object> exceptionMessageNoReadable(HttpMessageNotReadableException exception) {
@@ -42,8 +43,8 @@ public class GlobalHandler {
 
 	@ExceptionHandler(MethodArgumentTypeMismatchException.class)
 	public ResponseEntity<Object> exceptionTypeMismatch(MethodArgumentTypeMismatchException exception) {
-		return new ResponseEntity<>(new ExceptionResponse(HttpStatus.NOT_FOUND.value(), "Not Found!"),
-				HttpStatus.NOT_FOUND);
+		return new ResponseEntity<>(new ExceptionResponse(HttpStatus.BAD_REQUEST.value(), "The value must be of type Long!"),
+				HttpStatus.BAD_REQUEST);
 	}
 
 	@ExceptionHandler(EmptyResultDataAccessException.class)
